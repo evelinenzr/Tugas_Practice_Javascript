@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Fundamental</title>
+    <script>
+        // string
+        let animal1 = 'bear'
+        let animal2 = 'cat'
+        alert('this is string '+ animal1 + ','+ animal2);
+        
+        // boolean
+        let weekend = false;
+        let weekday = true;
+        alert ('is this weekend? '+weekend)
+
+        //numbers
+        let x = 2.5
+        let y = 3
+        alert('this is number with decimal '+  x +' , '+ 'this is without decimal '+ y)
+
+        //array 
+        let buah = [ '🍉' , '🍊' , '🍎' , '🍋‍🟩']
+        alert('Buah kedua : ' + buah[1])
+
+        //object
+        const car = {brand : 'toyota',type : 'SUV' , name : 'Fortuner', year : '2020'}
+        alert('Car brand = '+ car.brand )
+
+        //console log , open in console
+        console.log(car) // object
+
+        //logical operator
+        let i = 21;
+        let j = 23;
+
+        console.log(i < 15 && j > 10); // (true && true) -> true
+        console.log(i > 15 && j > 10); // (false && true) -> false
+        console.log(i < 15 || j > 10); // (true || true) -> true
+        console.log(i > 15 || j > 10); // (false || true) -> true
+        console.log(!(i < 15)); // !(true) -> false
+        console.log(!(i < 15 && j > 10)); // !(true && true) -> !(true) -> false
+
+        //Equality Comparison
+        const number1 = 23
+        const number2 = 23.0
+        const string1 = '23'
+        
+        console.log(number1==number2) 
+        console.log(number1===number2)
+        console.log(number1==string1)
+        console.log(number1===string1)
+
+    </script>
+</head>
+<body>
+    <h1>JS Fundamental</h1>
+</body>
+</html>

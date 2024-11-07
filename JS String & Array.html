@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Inisialisasi antrian dengan pembeli awal
+        let queue = ["ray", "fiki", "fadhilla", "farah"];
+
+        // Pembeli baru datang
+        queue.push("nabila"); // Nabila datang
+        queue.push("maza", "elsi"); // Maza dan Elsi datang
+
+        // Pembeli terakhir tidak jadi antri dan pulang
+        queue.pop(); // Elsi pulang
+
+        // Antrian pertama mendapatkan belanjaan
+        queue.shift(); // Ray mendapatkan belanjaan
+
+        // Antrian kedua juga mendapatkan belanjaan
+        queue.shift(); // Fiki mendapatkan belanjaan
+
+        // Pembeli baru nyerobot antrian
+        queue.unshift("tomi"); // Tomi masuk antrian di depan
+
+        // Hasil akhir antrian
+        console.log(queue); // Menampilkan hasil akhir antrian
+    </script>
+</head>
+<body>
+    <h1>Push Pop Javascript</h1>
+</body>
+</html>
